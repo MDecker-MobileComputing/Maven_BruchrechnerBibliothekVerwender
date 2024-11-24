@@ -14,7 +14,7 @@ public class App {
         
         final Bruch ergebnis = b1.dividieren( b2 );
         
-        System.out.println( ergebnis + "\n" );        
+        System.out.println( "Ergebnis: " + ergebnis + "\n" );        
     }
     
 }
