@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project 
-    xmlns="http://maven.apache.org/POM/4.0.0" 
+<project
+    xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">        
-    
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
 	    <modelVersion>4.0.0</modelVersion>
-	 
+
 	    <groupId>de.eldecker.dhbw</groupId>
 	    <artifactId>bruchrechenverwender</artifactId>
 	    <version>0.0.1-SNAPSHOT</version>
 	    <packaging>jar</packaging>
-	 
+
 	    <name>bruchrechenverwender</name>
 	    <url>https://github.com/MDecker-MobileComputing/Maven_BruchrechnerBibliothekVerwender</url>
 	    <description>Verwender der Bruchrechner-Bibliothek</description>
@@ -21,15 +21,14 @@
 	          <url>https://opensource.org/license/BSD-3-clause/</url>
 	        </license>
 	    </licenses>
-	 
+
 	    <properties>
 	        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	        <java.version>23</java.version>
 	        <maven.compiler.source>${java.version}</maven.compiler.source>
 	        <maven.compiler.target>${java.version}</maven.compiler.target>
 	        <maven.compiler.release>${java.version}</maven.compiler.release>
-	
-        
+
 	        <!-- Plugin versions -->
 	        <maven.shade>3.2.2</maven.shade>
 	        <maven.clean>3.1.0</maven.clean>
@@ -39,18 +38,18 @@
 	        <maven.jar>3.2.0</maven.jar>
 	        <maven.install>3.0.0-M1</maven.install>
 	    </properties>
-	
+
 	    <dependencies>
-	    	    
+
 	    	<!-- Eigene Bibliothek referenzieren -->
 	        <dependency>
 	        	<groupId>de.eldecker.dhbw</groupId>
 	        	<artifactId>bruchrechnen</artifactId>
 	        	<version>0.0.1-SNAPSHOT</version>
 	        </dependency>
-	        
+
 	    </dependencies>
-	    
+
       <build>
         <plugins>
             <plugin>
