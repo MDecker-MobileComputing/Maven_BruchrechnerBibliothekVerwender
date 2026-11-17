@@ -28,8 +28,16 @@ jobs:
         java-version: '25'
         distribution: 'temurin'
         cache: maven
+    - name: Bruchrechner-Bibliothek auschecken
+      uses: actions/checkout@v7
+      with:
+        repository: MDecker-MobileComputing/Maven_BruchrechnerBibliothek
+        ref: master
+        path: bruchrechner-bibliothek
     - name: Maven-Installation checken
       run: mvn --version
+    - name: Bruchrechner-Bibliothek bauen und installieren
+      run: mvn --batch-mode -f bruchrechner-bibliothek/pom.xml clean install
     - name: FatJar-Datei mit Maven bauen
       run: mvn --batch-mode clean package
     - name: FatJar-Datei veröffentlichen
